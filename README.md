@@ -1,6 +1,6 @@
 ##  1. Clone o Repositório
 
-git clone https://github.com/LuizFelipeP/Cliente-Syncer.git
+git clone https://github.com/LuizFelipeP/Syncher-App.git
 
 
 ## 2. Instalar Dependências
