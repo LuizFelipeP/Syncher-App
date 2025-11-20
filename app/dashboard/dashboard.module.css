@@ -1,0 +1,228 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0fdf4;
+    padding: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 720px;
+    width: 100%;
+    background-color: white;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0f766e;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #0f766e;
+    padding-bottom: 6px;
+    color: #4b5563;
+    text-align: center;
+}
+
+.buttonsRow {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    background-color: #0d9488;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 28px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0f766e;
+}
+
+.buttonSecondary {
+    background-color: #e5e7eb;
+    color: #0f766e;
+    border: none;
+    border-radius: 28px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSecondary:hover {
+    background-color: #d1d5db;
+}
+
+.buttonSmall {
+    background-color: #0d9488;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.buttonSmall:hover {
+    background-color: #0f766e;
+}
+
+.buttonSmallSecondary {
+    background-color: #f0f0f0;
+    color: #0f766e;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.buttonSmallSecondary:hover {
+    background-color: #dcdcdc;
+}
+
+.section {
+    background-color: white;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.gastosList {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.gastoItem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    gap: 8px;
+}
+
+.gastoItem span {
+    flex: 1 1 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #222;
+}
+
+.input {
+    flex: 1 1 100%;
+    max-width: 300px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0f766e;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 24px;
+}
+
+.logoffButton {
+    background-color: transparent;
+    color: #0f766e;
+    border: 2px solid #0f766e;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.logoffButton:hover {
+    background-color: #0f766e;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 16px 12px;
+    }
+
+    /*.buttonsRow {*/
+    /*    flex-direction: column;*/
+    /*    gap: 12px;*/
+    /*}*/
+
+    .button, .buttonSecondary {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gastoItem {
+        /*flex-direction: column;*/
+        align-items: flex-start;
+    }
+
+    .input {
+        max-width: 100%;
+    }
+
+    .buttonSmall, .buttonSmallSecondary {
+        margin-left: 0;
+        width: auto;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+
+
+    }
+}
+
+.syncIndicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.syncTrue {
+    background-color: green;
+}
+
+.syncFalse {
+    background-color: red;
+}
